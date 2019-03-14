@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>exercicio10</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	
+		body{
+
+			background-color: #4EEE94;
+	}
+</style>
+	<script type="text/javascript">
+    function apenasNumeros(num) {
+        var er = /[^0-9.]/;
+        er.lastIndex = 0;
+        var campo = num;
+        if (er.test(campo.value)) {
+          campo.value = "";
+        }
+    }
+	</script>
+</head>
+<body>
+	<form>
+	<input class="form-control input-sm" onkeyup="apenasNumeros(this);" maxlength="3" type="text"  ng-model="numero.valor" />
+	<input type="submit" name="valide">
+	</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>exercicio 6</title>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    var fraseUser = prompt("Escreva uma palavra para verificar se é um palindromo","EX: ABA ");
+    function Palindromo(fraseUser){
+      fraseUser=fraseUser.toLowerCase().replace(/\s/g,"");
+      fraserReverse=fraseUser.split("").reverse().toString();
+      for (var i = 0; i < ((fraserReverse.length)-1); i++) {
+        fraserReverse=fraserReverse.replace(",","");
+      }; 
+      if(fraseUser==fraserReverse){ 
+        resultado="A palavra é um palindromo";
+      }
+      else{   
+        resultado="A palavra nao é um palindromo";
+      }
+      document.write(""+resultado);
+    }
+    Palindromo(fraseUser);
+  </script>
+</head>
+<body>
+
+
+</body>
+</html>

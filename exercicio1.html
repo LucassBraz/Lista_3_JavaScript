@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Alterar Cor background</title>
+	<style type="text/css">
+		
+		#Vermelho{
+
+			background-color: white;
+			color: black;
+			border: 2px solid #FF0000 ;
+		}
+		#Verde{
+
+			background-color: white;
+			color: black;
+			border: 2px solid #00FF00;
+		}
+		#Azul{
+
+			background-color: white;
+			color: black;
+			border: 2px solid #0000FF;
+		}
+		#Amarelo{
+
+			background-color: white;
+			color: black;
+			border: 2px solid #FFFF00;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		
+		function cor1() {
+			// body...
+			document.bgColor='red';
+		}
+		function cor2() {
+			// body...
+			document.bgColor='green';
+		}
+		function cor3() {
+			// body...
+			document.bgColor='blue';
+		}
+		function cor4() {
+			// body...
+			document.bgColor='yellow';
+		}
+
+
+	</script>
+</head>
+<body>
+	<form>
+		
+		<input type="button" value="Vermelho" id="Vermelho" onclick="cor1()"><br>
+		<input type="button" value="Verde" id="Verde" onclick="cor2()"><br>
+		<input type="button" value="Azul" id="Azul" onclick="cor3()"><br>
+		<input type="button" value="Amarelo" id="Amarelo" onclick="cor4()">
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html lang="pt-br">
+
+<head>
+
+	<title>exercicio 4</title>
+    <meta charset="utf-8">
+    <script type="text/javascript"></script>
+
+
+	
+         <script>
+          function mostra(id){
+            if (document.getElementById(id).style.display =='block'){
+              document.getElementById(id).style.display = 'none';
+              document.getElementById('b'+ id).value="Mostar";
+            }else { document.getElementById(id).style.display ='block';
+            document.getElementById('b'+ id).value="Ocultar";
+            }
+          }
+         </script>
+
+
+
+
+</head>
+
+    <body>
+        
+
+
+     			<div class="conteudo">
+     					
+           
+               <br>
+
+                  <div id="txt1" class="hidden">
+                        Crie uma página que possua um parágrafo e um botão “Ocultar/Mostrar”. Ao<br>
+                        clicar no botão o parágrafo é ocultado (caso esteja sendo mostrado) ou exibido<br>
+                        (caso esteja oculto).
+                  </div>
+
+                    <br>
+
+                    <input id="btxt1" type="button"  value ="Mostrar" onClick="mostra('txt1')" />
+
+
+
+				</div>
+</body>   
+</html>
